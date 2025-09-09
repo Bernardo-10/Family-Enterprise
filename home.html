@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Family Enterprise👨‍👩‍👧‍👦</title>
+</head>
+<body>
+    <div class="page" id="page">
+    <header>
+        <nav>
+            <h1 id="logo"> Family Enterprise👨‍👩‍👧‍👦</h1>
+            <ul class="navigation" id="navigation">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="#store">STORE</a></li>
+                <li><a href="#contact">CONTACT</a></li>                 
+                <li><a href="#aboutus">ABOUT US</a></li>
+            </ul>
+            <button class="burger" id="burger">
+                &#9776;
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="bienvenu">
+            <span> Bienvenu dans notre plateforme de </span>
+            <br><span style = " font-size:2.2rem; font-weight: bold; font-style: italic;"> Business familiale </span>
+        </div>
+        <div class="articles" id="store">
+            <span style="font-size: 1.7rem; text-decoration: underline wavy; text-underline-position: under;" >Nos articles</span>
+            <div class="conteneur">
+                <a href="parfum.html" style="text-decoration: none; color: black;">
+                    <div class="image-description">
+                        <div class="image">
+                            <img src="image/PXL_20250326_014436273.PORTRAIT.ORIGINAL~3.jpg" alt="1" width="100%" height="100%" style="border-radius: 10px 10px 0px 0px;" >
+                        </div>
+                        <div class="description">Parfums SMART</div>
+                    </div>
+                </a>
+                <a href="sacs.html" style="text-decoration: none; color: black;">
+                    <div class="image-description">
+                        <div class="image">
+                            <img src="image/PXL_20250326_020331584.PORTRAIT.jpg" alt="1" width="100%" height="100%" style="border-radius: 10px 10px 0px 0px;" >
+                        </div>
+                        <div class="description">Sacs en perle</div>
+                    </div>
+                </a>
+                <a href="bijoux.html" style="text-decoration: none; color: black;">
+                    <div class="image-description">
+                        <div class="image">
+                            <img src="image/IMG-20240918-WA0158.jpg" alt="1" width="100%" height="100%" style="border-radius: 10px 10px 0px 0px;" >
+                        </div>
+                        <div class="description"><span>Bijoux en perle</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="contact" id = "contact">
+            <p style="font-size: 1.7rem; text-decoration: underline wavy; text-underline-position: under;">Contactez-nous</p>
+            <p style="text-align: center; padding:40px 20px 0 ;">Pour toute commande de nos produits écrivez-nous sur nos réseaux sociaux via ces liens</p>
+            <div class="RS">
+                <div class="whatsapp">
+                    <a href="https://wa.me/237656811646">
+                        <span class="fab fa-whatsapp"></span>
+                        Whatsapp
+                    </a>
+                </div>
+                <div class="tiktok">
+                    <a href="https://www.tiktok.com/@black_diamond_0208?_t=ZM-8uzjsqeWJGB&_r=1">
+                        <span class="fab fa-tiktok"></span>
+                        Tiktok
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+    <footer>
+        <span style="display: flex; justify-content: center;">2025 FAMILY ENTERPRISE - Tous droits réservés</span>
+        <div class="foot_contener">
+            <div class="logo">
+                <h1>Family Enterprise👨‍👩‍👧‍👦</h1>
+                <p style="padding-top: 15px;"> Nous sommes une entreprise rassemblant tous les business effectués au sein de notre famille. 
+                Nous vous proposons des bijoux et accessoires en perle ainsi que des parfums car sentir bon c'est la base 🤗.
+                </p>
+            </div>
+            <div class="ecrito">
+                <span style="text-align: center;">N'oubliez pas de nous contacter. Merci de votre soutien 💕💕.</span>
+                <div class="RS2">
+                    <div class="whatsapp">
+                        <a href="https://wa.me/237656811646">
+                            <span class="fab fa-whatsapp"></span>
+                            Whatsapp
+                        </a>
+                    </div>
+                    <div class="tiktok">
+                        <a href="https://www.tiktok.com/@black_diamond_0208?_t=ZM-8uzjsqeWJGB&_r=1">
+                            <span class="fab fa-tiktok"></span>
+                            Tiktok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    </div>
+    <script>
+        const burger = document.getElementById("burger");
+        const navigation = document.querySelector('ul');
+        const main = document.querySelector("main");
+
+         burger.addEventListener("click", () => {
+          navigation.classList.toggle("show");
+          burger.classList.toggle("active")
+          main.classList.toggle('blur');
+        });
+    </script>
+</body>
+</html>

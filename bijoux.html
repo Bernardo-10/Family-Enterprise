@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bijoux.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bijoux en perle</title>
+</head>
+<body>
+    <div class="page" id="page">
+    <header>
+        <nav>
+            <h1 id="logo"> Family Enterprise👨‍👩‍👧‍👦</h1>
+            <ul class="navigation" id="navigation">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="home.html#store">STORE</a></li>
+                <li><a href="home.html#contact">CONTACT</a></li>                 
+                <li><a href="home.html#aboutus">ABOUT US</a></li>
+            </ul>
+            <button class="burger" id="burger">
+                &#9776;
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="titre">
+            <h1> NOS BIJOUX EN PERLE</h1>
+            <div class="contener">
+                <img src="image/IMG_20250318_202939_823.jpg">
+            <img src="image/.trashed-1745137495-IMG-20241101-WA0035.jpg">
+            <img src="image/IMG-20241101-WA0033.jpg">
+            <img src="image/IMG-20250113-WA0146.jpg">
+            <img src="image/IMG-20250225-WA0043.jpg">
+            <img src="image/IMG-20250110-WA0006.jpg">
+            <img src="image/IMG-20250317-WA0061.jpg">
+            <img src="image/IMG-20241110-WA0119.jpg">
+            <img src="image/IMG-20241106-WA0097.jpg">
+            <img src="image/IMG-20250201-WA0085.jpg">
+            <img src="image/IMG-20250128-WA0337.jpg">
+            <img src="image/IMG_20250214_015523_399.jpg">
+            <img src="image/IMG-20240917-WA0183.jpg">
+            <img src="image/.trashed-1745137441-IMG-20241015-WA0095.jpg">
+            <img src="image/IMG-20241228-WA0099.jpg">
+            <img src="image/IMG_20250319_124338_885.jpg">
+            <img src="image/IMG_20250318_092337_691.jpg">
+            <img src="image/IMG-20240918-WA0172.jpg">
+            <img src="image/IMG-20250128-WA0335.jpg">
+            <img src="image/IMG-20250303-WA0005.jpg">
+            <img src="image/IMG_20250223_012741_496.jpg">
+            <img src="image/IMG_20250223_012305_862.jpg">
+            <img src="image/IMG-20241218-WA0012.jpg">
+            <img src="image/IMG-20241218-WA0010.jpg">
+            <img src="image/IMG-20250128-WA0085.jpg">
+            <img src="image/IMG_20250206_205702_174.jpg">
+            <img src="image/IMG_20250206_205028_155.jpg">
+            <img src="image/IMG_20250206_205129_470.jpg">
+            <img src="image/IMG_20250206_205432_705.jpg">
+            <img src="image/IMG_20250206_212021_395.jpg">
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <span style="display: flex; justify-content: center;">2025 FAMILY ENTERPRISE - Tous droits réservés</span>
+        <div class="foot_contener">
+            <div class="logo">
+                <h1>Family Enterprise👨‍👩‍👧‍👦</h1>
+                <p style="padding-top: 15px;"> Nous sommes une entreprise rassemblant tous les business effectués au sein de notre famille. 
+                Nous vous proposons des bijoux et accessoires en perle ainsi que des parfums car sentir bon c'est la base 🤗.
+                </p>
+            </div>
+            <div class="ecrito">
+                <span style="text-align: center;">N'oubliez pas de nous contacter. Merci de votre soutien 💕💕.</span>
+                <div class="RS2">
+                    <div class="whatsapp">
+                        <a href="https://wa.me/237656811646">
+                            <span class="fab fa-whatsapp"></span>
+                            Whatsapp
+                        </a>
+                    </div>
+                    <div class="tiktok">
+                        <a href="https://www.tiktok.com/@black_diamond_0208?_t=ZM-8uzjsqeWJGB&_r=1">
+                            <span class="fab fa-tiktok"></span>
+                            Tiktok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    </div>
+    <script>
+        const burger = document.getElementById("burger");
+        const navigation = document.querySelector('ul');
+        const main = document.querySelector("main");
+
+         burger.addEventListener("click", () => {
+          navigation.classList.toggle("show");
+          burger.classList.toggle("active")
+          main.classList.toggle('blur');
+        });
+    </script>
+</body>
+</html>

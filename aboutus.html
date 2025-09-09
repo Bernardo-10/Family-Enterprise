@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutus.css">
+    <title>ABOUT US</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 > Family Enterprise</h1>
+            <button class="burger" id="burger">&#9776;</button>
+            <ul class="barre nav-links" id="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="">CONTACT</a></li> 
+                <li><a href="aboutus.html">ABOUT US</a></li>
+            </ul>
+                
+        </div>
+    </header>
+    <main id="logo">
+        <h1 class="titre" > QUI SOMMES NOUS ?  </h1>
+        <div class="textephoto">
+            <img src ="image/PXL_20241110_145951673.MP.jpg">
+            <div>
+                <h1>
+                    <u>Maman
+                    <br>#Chef</u> 
+                </h1>
+                <br>Responsable et professionelle des saucisses
+                <br> Créatrice des sacs en perle 
+                <br> Jus naturels 
+            </div>
+        </div>
+        <div class="textephoto">
+            <img src ="image/PXL_20250223_152554268.PORTRAIT.jpg">
+            <div>
+                <h1>
+                    <u>Véra
+                    <br>#Vady Hilson</u>
+                </h1>
+                <br>Conceptionneuse des bijoux et sacs en perle  
+            </div>
+        </div>
+        <div class="textephoto">
+            <img src ="image/PXL_20250223_153407805.jpg">
+            <div>
+                <h1>
+                    <u> Bernardo 
+                    <br>#jb </u>
+                </h1>
+                <br>Assistant général 
+            </div>
+        </div>
+
+
+    </main>
+    <div class="enhaut" ><a href="#logo">En haut</a></div>
+    <script>
+        const burger = document.getElementById("burger");
+        const navLinks = document.getElementById("nav-links");
+        const bodyContent = document.querySelector('main');
+      
+        burger.addEventListener("click", () => {
+          navLinks.classList.toggle("show");
+          burger.classList.toggle('active');
+          bodyContent.classList.toggle('blur');
+        });
+
+    </script>
+    <footer>
+        <div class="q"> 
+            2025 FAMILY ENTREPRISE - Tous droits réservés
+        </div>
+        <div class="ecriture">
+            
+            <div class="contact">Contact: 656811646</div>
+            <div class="what">Whatsapp: <a href="https://wa.me/237656811646">lien Whatsapp</a> </div>
+            <div class="ti">Tiktok : <a href="https://www.tiktok.com/@black_diamond_0208?_t=ZM-8uzjsqeWJGB&_r=1">Lien tiktok</a> </div>
+            
+        </div>
+    </footer>
+</body>
+</html>

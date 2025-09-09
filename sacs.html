@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sacs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sacs en perle</title>
+</head>
+<body>
+    <div class="page" id="page">
+    <header>
+        <nav>
+            <h1 id="logo"> Family Enterprise👨‍👩‍👧‍👦</h1>
+            <ul class="navigation" id="navigation">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="home.html#store">STORE</a></li>
+                <li><a href="home.html#contact">CONTACT</a></li>                 
+                <li><a href="home.html#aboutus">ABOUT US</a></li>
+            </ul>
+            <button class="burger" id="burger">
+                &#9776;
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="titre">
+            <h1> NOS SACS EN PERLE</h1>
+        </div>
+        <div class="contener">
+            <div class="textephoto">
+                <img src="image/PXL_20250326_020101867.PORTRAIT.jpg">
+                <p class="description">  Prix : 20000 FCFA </p>
+            </div>
+            <div class="textephoto">
+                <img src="image/PXL_20250326_020154052.PORTRAIT.jpg">
+                <p class="description"> Prix : 20000 FCFA </p>
+            </div>
+            <div class="textephoto">
+                <img src="image/PXL_20250326_020331584.PORTRAIT.jpg">
+                <p class="description"> Prix : 20000 FCFA </p>
+            </div>
+            <div class="textephoto">
+                <img src="image/PXL_20250326_020454560.PORTRAIT.ORIGINAL.jpg">
+                <p class="description"> Prix : 15000 FCFA </p>
+            </div>
+                <div class="textephoto">
+                <img src="image/IMG-20250114-WA0014.jpg">
+                <p class="description"> Prix : 5000 FCFA </p>
+            </div>
+            <div class="textephoto">
+                <img src="image/PXL_20250326_020747295.PORTRAIT.jpg">
+                <p class="description"> Prix : 15000 FCFA </p>
+            </div>
+            <div class="textephoto">
+                <img src="image/PXL_20250326_020933590.PORTRAIT.jpg">
+                <p class="description"> Prix :7500 FCFA </p>
+            </div>
+            <div class="textephoto">
+                <img src="image/IMG-20250322-WA0091.jpg">
+                <p class="description"> Prix : 7500 FCFA </p>
+            </div>
+            <div class="textephoto">
+                <img src="image/IMG-20250322-WA0089.jpg">
+                <p class="description"> Prix : 7500 FCFA </p>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <span style="display: flex; justify-content: center;">2025 FAMILY ENTERPRISE - Tous droits réservés</span>
+        <div class="foot_contener">
+            <div class="logo">
+                <h1>Family Enterprise👨‍👩‍👧‍👦</h1>
+                <p style="padding-top: 15px;"> Nous sommes une entreprise rassemblant tous les business effectués au sein de notre famille. 
+                Nous vous proposons des bijoux et accessoires en perle ainsi que des parfums car sentir bon c'est la base 🤗.
+                </p>
+            </div>
+            <div class="ecrito">
+                <span style="text-align: center;">N'oubliez pas de nous contacter. Merci de votre soutien 💕💕.</span>
+                <div class="RS2">
+                    <div class="whatsapp">
+                        <a href="https://wa.me/237656811646">
+                            <span class="fab fa-whatsapp"></span>
+                            Whatsapp
+                        </a>
+                    </div>
+                    <div class="tiktok">
+                        <a href="https://www.tiktok.com/@black_diamond_0208?_t=ZM-8uzjsqeWJGB&_r=1">
+                            <span class="fab fa-tiktok"></span>
+                            Tiktok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    </div>
+    <script>
+        const burger = document.getElementById("burger");
+        const navigation = document.querySelector('ul');
+        const main = document.querySelector("main");
+
+         burger.addEventListener("click", () => {
+          navigation.classList.toggle("show");
+          burger.classList.toggle("active")
+          main.classList.toggle('blur');
+        });
+    </script>
+</body>
+</html>

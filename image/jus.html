@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jus.css">
+    <title>STORE</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 > Family Enterprise</h1>
+            <button class="burger" id="burger">&#9776;</button>
+            <ul class="barre nav-links" id="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="">CONTACT</a></li>                    
+                <li><a href="aboutus.html">ABOUT US</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="logo">
+        <h1 class="titre" > NOS ARTICLES </h1>
+        <div class="contener1">
+            <div class="textephoto">
+                <img src ="PXL_20250326_021531831.PORTRAIT.jpg">
+                <p class="description">  1L : 1000 FCFA </p>
+            </div>
+            <div class="textephoto">
+                <img src ="PXL_20250326_021448277.PORTRAIT.jpg">
+                <p class="description"> 1L : 1500 FCFA </p>
+            </div>
+        </div>
+        <div class="contener1">
+            <div class="textephoto">
+                <img src ="PXL_20250326_021411765.PORTRAIT.jpg">
+                <p class="description">  0.5L : 500 FCFA </p>
+            </div>
+            <div class="textephoto">
+                <img src ="PXL_20250326_021502299.PORTRAIT.jpg">
+                <p class="description"> 0.5L : 750 FCFA </p>
+            </div>
+        </div>
+    </main>
+    <div class="enhaut" ><a href="#logo">En haut</a></div>
+    <script>
+        const burger = document.getElementById("burger");
+        const navLinks = document.getElementById("nav-links");
+        const bodyContent = document.querySelector('main');
+      
+        burger.addEventListener("click", () => {
+          navLinks.classList.toggle("show");
+          burger.classList.toggle('active');
+          bodyContent.classList.toggle('blur');
+        });
+
+    </script>
+    <footer>
+        <div class="q"> 
+            2025 FAMILY ENTREPRISE - Tous droits réservés
+        </div>
+        <div class="ecriture">
+            
+            <div class="contact">Contact: 656811646</div>
+            <div class="what">Whatsapp: <a href="https://wa.me/237656811646">lien Whatsapp</a> </div>
+            <div class="ti">Tiktok : <a href="https://www.tiktok.com/@black_diamond_0208?_t=ZM-8uzjsqeWJGB&_r=1">Lien tiktok</a> </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
