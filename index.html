@@ -44,7 +44,7 @@
                         <div class="image">
                             <img src="image/PXL_20250326_020331584.PORTRAIT.jpg" alt="1" width="100%" height="100%" style="border-radius: 10px 10px 0px 0px;" >
                         </div>
-                        <div class="description">Sacs en perle</div>
+                        <div class="description">Sacs en Perle</div>
                     </div>
                 </a>
                 <a href="bijoux.html" style="text-decoration: none; color: black;">
@@ -52,7 +52,7 @@
                         <div class="image">
                             <img src="image/IMG-20240918-WA0158.jpg" alt="1" width="100%" height="100%" style="border-radius: 10px 10px 0px 0px;" >
                         </div>
-                        <div class="description"><span>Bijoux en perle</span></div>
+                        <div class="description"><span>Bijoux en Perle</span></div>
                     </div>
                 </a>
             </div>
@@ -108,15 +108,40 @@
     </footer>
     </div>
     <script>
+        
         const burger = document.getElementById("burger");
         const navigation = document.querySelector('ul');
         const main = document.querySelector("main");
+        const liens = navigation.querySelectorAll("a");
 
-         burger.addEventListener("click", () => {
-          navigation.classList.toggle("show");
-          burger.classList.toggle("active")
-          main.classList.toggle('blur');
+        burger.addEventListener("click", (e) => {
+            e.stopPropagation(); 
+            navigation.classList.toggle("show");
+            burger.classList.toggle("active");
+            main.classList.toggle('blur');
         });
+
+        liens.forEach(lien => {
+            lien.addEventListener("click", () => {
+                closeMenu();
+            });
+        });
+
+        document.addEventListener("click", (e) => {
+            if (
+                navigation.classList.contains("show") &&
+                !navigation.contains(e.target) &&
+                e.target !== burger
+            ) {
+                closeMenu();
+            }
+        });
+
+        function closeMenu() {
+            navigation.classList.remove("show");
+            burger.classList.remove("active");
+            main.classList.remove("blur");
+        }
     </script>
 </body>
 </html>
