@@ -93,15 +93,40 @@
     </footer>
     </div>
     <script>
+        
         const burger = document.getElementById("burger");
         const navigation = document.querySelector('ul');
         const main = document.querySelector("main");
+        const liens = navigation.querySelectorAll("a");
 
-         burger.addEventListener("click", () => {
-          navigation.classList.toggle("show");
-          burger.classList.toggle("active")
-          main.classList.toggle('blur');
+        burger.addEventListener("click", (e) => {
+            e.stopPropagation(); 
+            navigation.classList.toggle("show");
+            burger.classList.toggle("active");
+            main.classList.toggle('blur');
         });
+
+        liens.forEach(lien => {
+            lien.addEventListener("click", () => {
+                closeMenu();
+            });
+        });
+
+        document.addEventListener("click", (e) => {
+            if (
+                navigation.classList.contains("show") &&
+                !navigation.contains(e.target) &&
+                e.target !== burger
+            ) {
+                closeMenu();
+            }
+        });
+
+        function closeMenu() {
+            navigation.classList.remove("show");
+            burger.classList.remove("active");
+            main.classList.remove("blur");
+        }
     </script>
 </body>
 </html>
